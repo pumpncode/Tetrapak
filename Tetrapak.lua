@@ -231,9 +231,9 @@ end
     end
 
     local loc_colour_ref = loc_colour
-    function loc_colour(key)
+    function loc_colour(key, _default)
         if key == CURSERARITY then return HEX("444444")
-        else return loc_colour_ref(key) end
+        else return loc_colour_ref(key, _default) end
     end
 
 
